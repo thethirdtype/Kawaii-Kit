@@ -8,7 +8,9 @@ https://github.com/thethirdtype
 */
 
 .Button {
-    background-color: #383838;
+    active-background-color: #444444;
+    active-foreground-color: #FFFFFF;
+    background-color: #444444;
     foreground-color: #FFFFFF;
 }
 
@@ -17,13 +19,16 @@ https://github.com/thethirdtype
 }
 
 .Checkbutton {
-    background-color: #383838;
+    active-background-color: #2C2C2C;
+    active-foreground-color: #FFFFFF;
+	background-color: #2C2C2C;
     foreground-color: #FFFFFF;
 }
 
 .Entry {
-    background-color: #191919;
+    background-color: #333333;
     foreground-color: #FFFFFF;
+    insert-background-color: #FFFFFF;
 }
 
 .Frame {
@@ -46,7 +51,9 @@ https://github.com/thethirdtype
 }
 
 .Menubutton {
-    background-color: #383838;
+    active-background-color: #444444;
+    active-foreground-color: #FFFFFF;
+    background-color: #444444;
     foreground-color: #FFFFFF;
 }
 
@@ -56,22 +63,26 @@ https://github.com/thethirdtype
 }
 
 .Radiobutton {
-    background-color: #383838;
+    active-background-color: #2C2C2C;
+    active-foreground-color: #FFFFFF;
+    background-color: #2C2C2C;
     foreground-color: #FFFFFF;
 }
 
 .Scale {
+	active-background-color: #2C2C2C;
     background-color: #2C2C2C;
     foreground-color: #FFFFFF;
 }
 
 .Scrollbar {
-    background-color: #383838;
+    background-color: #444444;
 }
 
 .Text {
-    background-color: #191919;
-    foreground-color: #8FD139;
+    background-color: #333333;
+    foreground-color: #FFFFFF;
+    insert-background-color: #FFFFFF;
 }
 
 .Toplevel {

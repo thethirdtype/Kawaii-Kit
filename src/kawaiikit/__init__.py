@@ -1,11 +1,12 @@
 import tkinter as tk
 import ctypes
+import os
 
 
 '''
 
-wm-lib
-Window Manager Library for Tkinter
+Kawaii Kit
+Window Manager Package for Tkinter
 
 Author: thirdtype
 https://github.com/thethirdtype
@@ -50,15 +51,28 @@ def load_color_schemes_from_css(css_file):
 
 class Window:
     def __init__(self, title=None, width=300, height=200, center_screen=True, x=0, y=0, icon=None,
-                 disable_dark_mode=False, force_dark_mode=False, css_file="dark_theme.css"):
+                 disable_dark_mode=False, force_dark_mode=False, css_file=None):
         self.root = tk.Tk()
         self.root.title(title)
         self.root.geometry(f"{width}x{height}")
 
         if center_screen:
-            self.root.eval("tk::PlaceWindow . center")
+            screenwidth = self.root.winfo_screenwidth()
+            screenheight = self.root.winfo_screenheight()
+            alignment = "%dx%d+%d+%d" % (width, height, (screenwidth - width) / 2, (screenheight - height) / 2)
+            self.root.geometry(alignment)
         else:
             self.root.geometry(f"+{x}+{y}")
+
+        # Get the current directory
+        current_directory = os.path.dirname(os.path.abspath(__file__))
+
+        # If css_file is not provided, use the default CSS file name
+        if css_file is None:
+            css_file = os.path.join(current_directory, "dark_theme.css")
+        elif not os.path.isfile(css_file):
+            # If it doesn't exist, assume it's a relative path and append the current directory
+            css_file = os.path.join(current_directory, css_file)
 
         # Check if dark mode is enabled
         dark_mode = is_dark_mode()
@@ -79,6 +93,21 @@ class Window:
         if icon:
             self.root.iconbitmap(icon)
 
+    def button(self, **kwargs):
+        return self.create("Button", **kwargs)
+
+    Button = button
+
+    def canvas(self, **kwargs):
+        return self.create("Canvas", **kwargs)
+
+    Canvas = canvas
+
+    def checkbutton(self, **kwargs):
+        return self.create("Checkbutton", **kwargs)
+
+    Checkbutton = checkbutton
+
     def create(self, widget_type, **kwargs):
         if not isinstance(widget_type, type):
             # Prepend tk. if widget_type is not a class
@@ -92,10 +121,19 @@ class Window:
             color_scheme = self.color_schemes[widget.winfo_class()]
             bg_color = color_scheme.get("background-color", "")
             fg_color = color_scheme.get("foreground-color", "")
+            active_bg_color = color_scheme.get("active-background-color", "")
+            active_fg_color = color_scheme.get("active-foreground-color", "")
+            insert_bg_color = color_scheme.get("insert-background-color", "")
             if bg_color:
                 widget.config(bg=bg_color)
             if fg_color:
                 widget.config(fg=fg_color)
+            if active_bg_color:
+                widget.config(activebackground=active_bg_color)
+            if active_fg_color:
+                widget.config(activeforeground=active_fg_color)
+            if insert_bg_color:
+                widget.config(insertbackground=insert_bg_color)
 
         # Pack the widget into the window
         widget.pack()
@@ -103,5 +141,69 @@ class Window:
         # Return the created widget
         return widget
 
+    Create = create
+
+    def entry(self, **kwargs):
+        return self.create("Entry", **kwargs)
+
+    Entry = entry
+
+    def frame(self, **kwargs):
+        return self.create("Frame", **kwargs)
+
+    Frame = frame
+
+    def label(self, **kwargs):
+        return self.create("Label", **kwargs)
+
+    Label = label
+
+    def listbox(self, **kwargs):
+        return self.create("Listbox", **kwargs)
+
+    Listbox = listbox
+
+    def menu(self, **kwargs):
+        return self.create("Menu", **kwargs)
+
+    Menu = menu
+
+    def menubutton(self, **kwargs):
+        return self.create("Menubutton", **kwargs)
+
+    Menubutton = menubutton
+
+    def message(self, **kwargs):
+        return self.create("Message", **kwargs)
+
+    Message = message
+
+    def radiobutton(self, **kwargs):
+        return self.create("Radiobutton", **kwargs)
+
+    Radiobutton = radiobutton
+
     def run(self):
         self.root.mainloop()
+
+    Run = run
+
+    def scale(self, **kwargs):
+        return self.create("Scale", **kwargs)
+
+    Scale = scale
+
+    def scrollbar(self, **kwargs):
+        return self.create("Scrollbar", **kwargs)
+
+    Scrollbar = scrollbar
+
+    def text(self, **kwargs):
+        return self.create("Text", **kwargs)
+
+    Text = text
+
+    def toplevel(self, **kwargs):
+        return self.create("Toplevel", **kwargs)
+
+    Toplevel = toplevel
