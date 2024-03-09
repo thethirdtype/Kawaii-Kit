@@ -67,12 +67,30 @@ class Window:
         # Get the current directory
         current_directory = os.path.dirname(os.path.abspath(__file__))
 
+        # Set themes directory
+        themes_dir = f"{current_directory}\\themes"
+
         # If css_file is not provided, use the default CSS file name
         if css_file is None:
-            css_file = os.path.join(current_directory, "dark_theme.css")
+            css_file = os.path.join(themes_dir, "dark_mode.css")
         elif not os.path.isfile(css_file):
-            # If it doesn't exist, assume it's a relative path and append the current directory
-            css_file = os.path.join(current_directory, css_file)
+            # If it doesn't exist, assume it's in the themes directory
+            css_file = os.path.join(themes_dir, css_file)
+
+        # Set default icon and path
+        default_icon = "brush.ico"
+        icons_dir = current_directory
+
+        # If icon is not provided, use the default ICO file name
+        if icon is None:
+            icon = os.path.join(icons_dir, default_icon)
+        elif not os.path.isfile(icon):
+            # If it doesn't exist, assume it's in the icons directory
+            icon = os.path.join(icons_dir, icon)
+
+        # If icon is still invalid, use the default ICO file name
+        if not os.path.isfile(icon):
+            icon = os.path.join(icons_dir, default_icon)
 
         # Check if dark mode is enabled
         dark_mode = is_dark_mode()
@@ -90,7 +108,7 @@ class Window:
                     self.root.configure(bg=bg_color)
 
         # Set Icon
-        if icon:
+        if os.path.isfile(icon):
             self.root.iconbitmap(icon)
 
     def button(self, **kwargs):
