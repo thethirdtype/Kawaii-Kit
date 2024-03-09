@@ -21,7 +21,7 @@ https://github.com/thethirdtype
 .Checkbutton {
     active-background-color: #2C2C2C;
     active-foreground-color: #FFFFFF;
-	background-color: #2C2C2C;
+    background-color: #2C2C2C;
     foreground-color: #FFFFFF;
 }
 
@@ -70,7 +70,7 @@ https://github.com/thethirdtype
 }
 
 .Scale {
-	active-background-color: #2C2C2C;
+    active-background-color: #2C2C2C;
     background-color: #2C2C2C;
     foreground-color: #FFFFFF;
 }
