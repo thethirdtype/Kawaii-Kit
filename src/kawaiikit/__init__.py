@@ -51,7 +51,7 @@ def load_color_schemes_from_css(css_file):
 
 class Window:
     def __init__(self, title=None, width=300, height=200, center_screen=True, x=0, y=0, icon=None,
-                 disable_dark_mode=False, force_dark_mode=False, css_file=None):
+                 disable_dark_mode=False, force_theme=False, css_file=None):
         self.root = tk.Tk()
         self.root.title(title)
         self.root.geometry(f"{width}x{height}")
@@ -96,7 +96,7 @@ class Window:
         dark_mode = is_dark_mode()
 
         # Set window colors for dark mode
-        if force_dark_mode or (not disable_dark_mode and dark_mode):
+        if force_theme or (not disable_dark_mode and dark_mode):
             # Load color schemes from CSS file if provided
             self.color_schemes = load_color_schemes_from_css(css_file)
 

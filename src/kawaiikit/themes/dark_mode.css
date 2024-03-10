@@ -41,7 +41,7 @@ https://github.com/thethirdtype
 }
 
 .Listbox {
-    background-color: #2C2C2C;
+    background-color: #333333;
     foreground-color: #FFFFFF;
 }
 
@@ -70,8 +70,8 @@ https://github.com/thethirdtype
 }
 
 .Scale {
-    active-background-color: #2C2C2C;
-    background-color: #2C2C2C;
+    active-background-color: #333333;
+    background-color: #333333;
     foreground-color: #FFFFFF;
 }
 
