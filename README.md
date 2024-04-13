@@ -1,6 +1,7 @@
 ![logo_512](https://github.com/thethirdtype/Kawaii-Kit/assets/125661915/d40e722d-5c9f-4fd9-8fa3-606b6c63f1d1)
 
-# Kawaii Kit
+# ![KawaiiKit_png_96](https://github.com/thethirdtype/Kawaii-Kit/assets/125661915/e63792d6-9e7c-49da-a14c-557aa22308a2)![Title_png_96](https://github.com/thethirdtype/Kawaii-Kit/assets/125661915/220e6cd7-3640-46c6-818c-b5ad62ff84fb "Kawaii Kit")
+
 🌸 **Want to add some flair to your Python projects?** 🐍
 
 Enter Kawaii Kit! 🎀 It effortlessly loads cute themes from CSS, making the process a breeze.
