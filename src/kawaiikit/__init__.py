@@ -1,6 +1,7 @@
 import tkinter as tk
 import ctypes
 import os
+from typing import Dict, Union
 
 
 '''
@@ -14,7 +15,7 @@ https://github.com/thethirdtype
 '''
 
 
-def is_dark_mode():
+def is_dark_mode() -> Union[bool, None]:
     try:
         # Check the system-wide color preferences using GETCLIENTAREAANIMATION
         ui_param = ctypes.c_uint(0)
@@ -25,7 +26,7 @@ def is_dark_mode():
         return None
 
 
-def load_color_schemes_from_css(css_file):
+def load_color_schemes_from_css(css_file: str) -> Dict[str, Dict[str, str]]:
     color_schemes = {}
     if css_file:
         try:
@@ -50,8 +51,10 @@ def load_color_schemes_from_css(css_file):
 
 
 class Window:
-    def __init__(self, title=None, width=300, height=200, center_screen=True, x=0, y=0, icon=None,
-                 disable_dark_mode=False, force_theme=False, css_file=None):
+    def __init__(self, title: str = None, width: int = 300, height: int = 200, center_screen: bool = True,
+                 x: int = 0, y: int = 0, icon: str = None, disable_dark_mode: bool = False,
+                 force_theme: bool = False, css_file: str = None) -> None:
+
         self.root = tk.Tk()
         self.root.title(title)
         self.root.geometry(f"{width}x{height}")
@@ -103,7 +106,7 @@ class Window:
             # Set background color for the root window
             if "Toplevel" in self.color_schemes:
                 color_scheme = self.color_schemes["Toplevel"]
-                bg_color = color_scheme.get("background-color", "")
+                bg_color = color_scheme.get("bg", "")
                 if bg_color:
                     self.root.configure(bg=bg_color)
 
@@ -126,7 +129,7 @@ class Window:
 
     Checkbutton = checkbutton
 
-    def create(self, widget_type, **kwargs):
+    def create(self, widget_type: Union[type, str], **kwargs) -> Union[tk.Widget, None]:
         if not isinstance(widget_type, type):
             # Prepend tk. if widget_type is not a class
             widget_type = getattr(tk, widget_type)
@@ -135,23 +138,13 @@ class Window:
         widget = widget_type(self.root, **kwargs)
 
         # Apply color scheme if available
-        if widget.winfo_class() in self.color_schemes:
+        if hasattr(self, 'color_schemes') and widget.winfo_class() in self.color_schemes:
             color_scheme = self.color_schemes[widget.winfo_class()]
-            bg_color = color_scheme.get("background-color", "")
-            fg_color = color_scheme.get("foreground-color", "")
-            active_bg_color = color_scheme.get("active-background-color", "")
-            active_fg_color = color_scheme.get("active-foreground-color", "")
-            insert_bg_color = color_scheme.get("insert-background-color", "")
-            if bg_color:
-                widget.config(bg=bg_color)
-            if fg_color:
-                widget.config(fg=fg_color)
-            if active_bg_color:
-                widget.config(activebackground=active_bg_color)
-            if active_fg_color:
-                widget.config(activeforeground=active_fg_color)
-            if insert_bg_color:
-                widget.config(insertbackground=insert_bg_color)
+            for attr, value in color_scheme.items():
+                # Check if the attribute can be configured for the widget
+                if hasattr(widget, 'configure') and widget.configure().keys().__contains__(attr.replace("-", "_")):
+                    # Set the attribute dynamically
+                    widget.configure(**{attr.replace("-", "_"): value})
 
         # Pack the widget into the window
         widget.pack()
@@ -201,7 +194,7 @@ class Window:
 
     Radiobutton = radiobutton
 
-    def run(self):
+    def run(self) -> None:
         self.root.mainloop()
 
     Run = run

@@ -8,83 +8,83 @@ https://github.com/thethirdtype
 */
 
 .Button {
-    active-background-color: #444444;
-    active-foreground-color: #FFFFFF;
-    background-color: #444444;
-    foreground-color: #FFFFFF;
+    activebackground: #444444;
+    activeforeground: #FFFFFF;
+    bg: #444444;
+    fg: #FFFFFF;
 }
 
 .Canvas {
-    background-color: #2C2C2C;
+    bg: #2C2C2C;
 }
 
 .Checkbutton {
-    active-background-color: #2C2C2C;
-    active-foreground-color: #FFFFFF;
-    background-color: #2C2C2C;
-    foreground-color: #FFFFFF;
+    activebackground: #2C2C2C;
+    activeforeground: #FFFFFF;
+    bg: #2C2C2C;
+    fg: #FFFFFF;
 }
 
 .Entry {
-    background-color: #333333;
-    foreground-color: #FFFFFF;
-    insert-background-color: #FFFFFF;
+    bg: #333333;
+    fg: #FFFFFF;
+    insertbackground: #FFFFFF;
 }
 
 .Frame {
-    background-color: #2C2C2C;
+    bg: #2C2C2C;
 }
 
 .Label {
-    background-color: #2C2C2C;
-    foreground-color: #FFFFFF;
+    bg: #2C2C2C;
+    fg: #FFFFFF;
 }
 
 .Listbox {
-    background-color: #333333;
-    foreground-color: #FFFFFF;
+    bg: #333333;
+    fg: #FFFFFF;
 }
 
 .Menu {
-    background-color: #2C2C2C;
-    foreground-color: #FFFFFF;
+    bg: #2C2C2C;
+    fg: #FFFFFF;
 }
 
 .Menubutton {
-    active-background-color: #444444;
-    active-foreground-color: #FFFFFF;
-    background-color: #444444;
-    foreground-color: #FFFFFF;
+    activebackground: #444444;
+    activeforeground: #FFFFFF;
+    bg: #444444;
+    fg: #FFFFFF;
 }
 
 .Message {
-    background-color: #2C2C2C;
-    foreground-color: #FFFFFF;
+    bg: #2C2C2C;
+    fg: #FFFFFF;
 }
 
 .Radiobutton {
-    active-background-color: #2C2C2C;
-    active-foreground-color: #FFFFFF;
-    background-color: #2C2C2C;
-    foreground-color: #FFFFFF;
+    activebackground: #2C2C2C;
+    activeforeground: #FFFFFF;
+    bg: #2C2C2C;
+    fg: #FFFFFF;
 }
 
 .Scale {
-    active-background-color: #333333;
-    background-color: #333333;
-    foreground-color: #FFFFFF;
+    activebackground: #333333;
+    bg: #333333;
+    fg: #FFFFFF;
 }
 
 .Scrollbar {
-    background-color: #444444;
+    bg: #444444;
 }
 
 .Text {
-    background-color: #333333;
-    foreground-color: #FFFFFF;
-    insert-background-color: #FFFFFF;
+    bg: #333333;
+    fg: #FFFFFF;
+    insertbackground: #FFFFFF;
 }
 
 .Toplevel {
-    background-color: #2C2C2C;
+    bg: #2C2C2C;
 }
