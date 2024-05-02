@@ -16,6 +16,7 @@ https://github.com/thethirdtype
 
 .Canvas {
     bg: #2C2C2C;
+    highlightbackground: #2C2C2C;
 }
 
 .Checkbutton {
@@ -43,6 +44,8 @@ https://github.com/thethirdtype
 .Listbox {
     bg: #333333;
     fg: #FFFFFF;
+    highlightbackground: #2C2C2C;
+    selectbackground: #444444;
 }
 
 .Menu {
@@ -51,9 +54,9 @@ https://github.com/thethirdtype
 }
 
 .Menubutton {
-    activebackground: #444444;
+    activebackground: #2C2C2C;
     activeforeground: #FFFFFF;
-    bg: #444444;
+    bg: #2C2C2C;
     fg: #FFFFFF;
 }
 
@@ -70,13 +73,18 @@ https://github.com/thethirdtype
 }
 
 .Scale {
-    activebackground: #333333;
-    bg: #333333;
+    activebackground: #2C2C2C;
+    bg: #2C2C2C;
     fg: #FFFFFF;
+    highlightbackground: #2C2C2C;
+    troughcolor: #333333;
 }
 
 .Scrollbar {
-    bg: #444444;
+    activebackground: #2C2C2C;
+    bg: #2C2C2C;
+    highlightbackground: #2C2C2C;
+    throughcolor: #333333;
 }
 
 .Text {
