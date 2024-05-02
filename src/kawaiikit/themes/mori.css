@@ -1,0 +1,103 @@
+/*
+
+Mori Theme for Kawaii Kit - Tkinter
+
+Author: thirdtype
+https://github.com/thethirdtype
+
+*/
+
+.Button {
+    activebackground: #668B3A;
+    activeforeground: #352415;
+    bg: #668B3A;
+    fg: #352415;
+}
+
+.Canvas {
+    bg: #7CBA50;
+    highlightbackground: #7CBA50;
+}
+
+.Checkbutton {
+    activebackground: #7CBA50;
+    activeforeground: #352415;
+    bg: #7CBA50;
+    fg: #352415;
+}
+
+.Entry {
+    bg: #90B985;
+    fg: #352415;
+    insertbackground: #352415;
+    selectbackground: #668B3A;
+    selectforeground: #352415;
+}
+
+.Frame {
+    bg: #7CBA50;
+}
+
+.Label {
+    bg: #7CBA50;
+    fg: #352415;
+}
+
+.Listbox {
+    bg: #90B985;
+    fg: #352415;
+    highlightbackground: #7CBA50;
+    selectbackground: #668B3A;
+    selectforeground: #352415;
+}
+
+.Menu {
+    bg: #7CBA50;
+    fg: #352415;
+}
+
+.Menubutton {
+    activebackground: #7CBA50;
+    activeforeground: #352415;
+    bg: #7CBA50;
+    fg: #352415;
+}
+
+.Message {
+    bg: #7CBA50;
+    fg: #352415;
+}
+
+.Radiobutton {
+    activebackground: #7CBA50;
+    activeforeground: #352415;
+    bg: #7CBA50;
+    fg: #352415;
+}
+
+.Scale {
+    activebackground: #7CBA50;
+    bg: #7CBA50;
+    fg: #352415;
+    highlightbackground: #7CBA50;
+    troughcolor: #90B985;
+}
+
+.Scrollbar {
+    activebackground: #7CBA50;
+    bg: #7CBA50;
+    highlightbackground: #7CBA50;
+    troughcolor: #90B985;
+}
+
+.Text {
+    bg: #90B985;
+    fg: #352415;
+    insertbackground: #352415;
+    selectbackground: #668B3A;
+    selectforeground: #352415;
+}
+
+.Toplevel {
+    bg: #7CBA50;
+}

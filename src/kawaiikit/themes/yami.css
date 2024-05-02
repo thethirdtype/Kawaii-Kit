@@ -1,0 +1,103 @@
+/*
+
+Yami Theme for Kawaii Kit - Tkinter
+
+Author: thirdtype
+https://github.com/thethirdtype
+
+*/
+
+.Button {
+    activebackground: #9400D3;
+    activeforeground: #FFD700;
+    bg: #9400D3;
+    fg: #FFD700;
+}
+
+.Canvas {
+    bg: #663399;
+    highlightbackground: #663399;
+}
+
+.Checkbutton {
+    activebackground: #663399;
+    activeforeground: #FFD700;
+    bg: #663399;
+    fg: #FFD700;
+}
+
+.Entry {
+    bg: #483D8B;
+    fg: #FFD700;
+    insertbackground: #FFD700;
+    selectbackground: #9400D3;
+    selectforeground: #FFD700;
+}
+
+.Frame {
+    bg: #663399;
+}
+
+.Label {
+    bg: #663399;
+    fg: #FFD700;
+}
+
+.Listbox {
+    bg: #483D8B;
+    fg: #FFD700;
+    highlightbackground: #663399;
+    selectbackground: #9400D3;
+    selectforeground: #FFD700;
+}
+
+.Menu {
+    bg: #663399;
+    fg: #FFD700;
+}
+
+.Menubutton {
+    activebackground: #663399;
+    activeforeground: #FFD700;
+    bg: #663399;
+    fg: #FFD700;
+}
+
+.Message {
+    bg: #663399;
+    fg: #FFD700;
+}
+
+.Radiobutton {
+    activebackground: #663399;
+    activeforeground: #FFD700;
+    bg: #663399;
+    fg: #FFD700;
+}
+
+.Scale {
+    activebackground: #663399;
+    bg: #663399;
+    fg: #FFD700;
+    highlightbackground: #663399;
+    troughcolor: #483D8B;
+}
+
+.Scrollbar {
+    activebackground: #663399;
+    bg: #663399;
+    highlightbackground: #663399;
+    troughcolor: #483D8B;
+}
+
+.Text {
+    bg: #483D8B;
+    fg: #FFD700;
+    insertbackground: #FFD700;
+    selectbackground: #9400D3;
+    selectforeground: #FFD700;
+}
+
+.Toplevel {
+    bg: #663399;
+}

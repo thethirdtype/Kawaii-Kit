@@ -1,6 +1,6 @@
 /*
 
-Dark Theme for Tkinter
+Dark Theme for Kawaii Kit - Tkinter
 
 Author: thirdtype
 https://github.com/thethirdtype
@@ -30,6 +30,8 @@ https://github.com/thethirdtype
     bg: #333333;
     fg: #FFFFFF;
     insertbackground: #FFFFFF;
+    selectbackground: #444444;
+    selectforeground: #FFFFFF;
 }
 
 .Frame {
@@ -46,6 +48,7 @@ https://github.com/thethirdtype
     fg: #FFFFFF;
     highlightbackground: #2C2C2C;
     selectbackground: #444444;
+    selectforeground: #FFFFFF;
 }
 
 .Menu {
@@ -91,6 +94,8 @@ https://github.com/thethirdtype
     bg: #333333;
     fg: #FFFFFF;
     insertbackground: #FFFFFF;
+    selectbackground: #444444;
+    selectforeground: #FFFFFF;
 }
 
 .Toplevel {

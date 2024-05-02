@@ -1,0 +1,103 @@
+/*
+
+Sakura Theme for Kawaii Kit - Tkinter
+
+Author: thirdtype
+https://github.com/thethirdtype
+
+*/
+
+.Button {
+    activebackground: #FFD9E6;
+    activeforeground: #4B0082;
+    bg: #FFD9E6;
+    fg: #4B0082;
+}
+
+.Canvas {
+    bg: #FFE4E1;
+    highlightbackground: #FFE4E1;
+}
+
+.Checkbutton {
+    activebackground: #FFE4E1;
+    activeforeground: #4B0082;
+    bg: #FFE4E1;
+    fg: #4B0082;
+}
+
+.Entry {
+    bg: #FFF0F5;
+    fg: #4B0082;
+    insertbackground: #4B0082;
+    selectbackground: #FFD9E6;
+    selectforeground: #4B0082;
+}
+
+.Frame {
+    bg: #FFE4E1;
+}
+
+.Label {
+    bg: #FFE4E1;
+    fg: #4B0082;
+}
+
+.Listbox {
+    bg: #FFF0F5;
+    fg: #4B0082;
+    highlightbackground: #FFE4E1;
+    selectbackground: #FFD9E6;
+    selectforeground: #4B0082;
+}
+
+.Menu {
+    bg: #FFE4E1;
+    fg: #4B0082;
+}
+
+.Menubutton {
+    activebackground: #FFE4E1;
+    activeforeground: #4B0082;
+    bg: #FFE4E1;
+    fg: #4B0082;
+}
+
+.Message {
+    bg: #FFE4E1;
+    fg: #4B0082;
+}
+
+.Radiobutton {
+    activebackground: #FFE4E1;
+    activeforeground: #4B0082;
+    bg: #FFE4E1;
+    fg: #4B0082;
+}
+
+.Scale {
+    activebackground: #FFE4E1;
+    bg: #FFE4E1;
+    fg: #4B0082;
+    highlightbackground: #FFE4E1;
+    troughcolor: #FFF0F5;
+}
+
+.Scrollbar {
+    activebackground: #FFE4E1;
+    bg: #FFE4E1;
+    highlightbackground: #FFE4E1;
+    troughcolor: #FFF0F5;
+}
+
+.Text {
+    bg: #FFF0F5;
+    fg: #4B0082;
+    insertbackground: #4B0082;
+    selectbackground: #FFD9E6;
+    selectforeground: #4B0082;
+}
+
+.Toplevel {
+    bg: #FFE4E1;
+}
