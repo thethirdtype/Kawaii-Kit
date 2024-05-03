@@ -35,7 +35,33 @@ Embrace the cuteness and simplicity of Kawaii Kit for your Python projects! 🌟
 
 🎨 **Get a sneak peek at themes!**
 
-<img width="467" alt="theme_tester_00" src="https://github.com/thethirdtype/Kawaii-Kit/assets/125661915/8f03b056-70cb-4e49-b84b-97a7ec6246f0">
+<img width="467" alt="theme_tester_00" src="https://github.com/thethirdtype/Kawaii-Kit/assets/125661915/73037539-58e8-4343-846b-8da2fe5939ba">
+
+dark_mode.css
+
+<br> <!-- This adds a line break -->
+
+<img width="467" alt="theme_tester_01" src="https://github.com/thethirdtype/Kawaii-Kit/assets/125661915/e992035e-7d7f-4fc3-92bd-4cd21c4a2c6d">
+
+default tkinter
+
+<br> <!-- This adds a line break -->
+
+<img width="467" alt="theme_tester_02" src="https://github.com/thethirdtype/Kawaii-Kit/assets/125661915/fd188ef9-2d4f-48e4-bcb5-04d0d6d395bd">
+
+sakura.css
+
+<br> <!-- This adds a line break -->
+
+<img width="467" alt="theme_tester_03" src="https://github.com/thethirdtype/Kawaii-Kit/assets/125661915/ed2330de-5dc7-457b-b3ed-3f3a50902706">
+
+yami.css
+
+<br> <!-- This adds a line break -->
+
+<img width="467" alt="theme_tester_04" src="https://github.com/thethirdtype/Kawaii-Kit/assets/125661915/3b81b61e-1e71-4b75-9620-a2954a952187">
+
+mori.css
 
 <br> <!-- This adds a line break -->
 
