@@ -76,9 +76,17 @@ class Window:
         # If css_file is not provided, use the default CSS file name
         if css_file is None:
             css_file = os.path.join(themes_dir, "dark_mode.css")
-        elif not os.path.isfile(css_file):
-            # If it doesn't exist, assume it's in the themes directory
-            css_file = os.path.join(themes_dir, css_file)
+        else:
+            # Check if the file extension is specified
+            root, ext = os.path.splitext(css_file)
+            if not ext:
+                # If no extension is specified, assume it's a CSS file
+                css_file += ".css"
+
+            # Now check if the file exists
+            if not os.path.isfile(css_file):
+                # If it doesn't exist, assume it's in the themes directory
+                css_file = os.path.join(themes_dir, css_file)
 
         # Set default icon and path
         default_icon = "brush.ico"
@@ -87,9 +95,17 @@ class Window:
         # If icon is not provided, use the default ICO file name
         if icon is None:
             icon = os.path.join(icons_dir, default_icon)
-        elif not os.path.isfile(icon):
-            # If it doesn't exist, assume it's in the icons directory
-            icon = os.path.join(icons_dir, icon)
+        else:
+            # Check if the file extension is specified
+            root, ext = os.path.splitext(icon)
+            if not ext:
+                # If no extension is specified, assume it's an ICO file
+                icon += ".ico"
+
+            # Check if the icon file exists
+            if not os.path.isfile(icon):
+                # If it doesn't exist, assume it's in the icons directory
+                icon = os.path.join(icons_dir, icon)
 
         # If icon is still invalid, use the default ICO file name
         if not os.path.isfile(icon):
