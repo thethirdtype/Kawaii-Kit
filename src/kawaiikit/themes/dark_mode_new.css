@@ -1,0 +1,120 @@
+/*
+
+Test for new type of css theme
+
+Dark Theme for Kawaii Kit - Tkinter
+
+Author: thirdtype
+https://github.com/thethirdtype
+
+*/
+
+:root {
+    /* Button background and Highlights */
+    background-front: #444444; /* Light Grey */
+
+    /* Window background */
+    background-middle: #2C2C2C; /* Dark Grey */
+
+    /* Boxes background */
+    background-back: #333333; /* Medium Grey */
+
+    /* Text (all foreground) */
+    foreground: #FFFFFF; /* White */
+}
+
+/* Widgets */
+.Button {
+    activebackground: var(background-front);
+    activeforeground: var(foreground);
+    bg: var(background-front);
+    fg: var(foreground);
+}
+
+.Canvas {
+    bg: var(background-middle);
+    highlightbackground: var(background-middle);
+}
+
+.Checkbutton {
+    activebackground: var(background-middle);
+    activeforeground: var(foreground);
+    bg: var(background-middle);
+    fg: var(foreground);
+}
+
+.Entry {
+    bg: var(background-back);
+    fg: var(foreground);
+    insertbackground: var(foreground);
+    selectbackground: var(background-front);
+    selectforeground: var(foreground);
+}
+
+.Frame {
+    bg: var(background-middle);
+}
+
+.Label {
+    bg: var(background-middle);
+    fg: var(foreground);
+}
+
+.Listbox {
+    bg: var(background-back);
+    fg: var(foreground);
+    highlightbackground: var(background-middle);
+    selectbackground: var(background-front);
+    selectforeground: var(foreground);
+}
+
+.Menu {
+    bg: var(background-middle);
+    fg: var(foreground);
+}
+
+.Menubutton {
+    activebackground: var(background-middle);
+    activeforeground: var(foreground);
+    bg: var(background-middle);
+    fg: var(foreground);
+}
+
+.Message {
+    bg: var(background-middle);
+    fg: var(foreground);
+}
+
+.Radiobutton {
+    activebackground: var(background-middle);
+    activeforeground: var(foreground);
+    bg: var(background-middle);
+    fg: var(foreground);
+}
+
+.Scale {
+    activebackground: var(background-middle);
+    bg: var(background-middle);
+    fg: var(foreground);
+    highlightbackground: var(background-middle);
+    troughcolor: var(background-back);
+}
+
+.Scrollbar {
+    activebackground: var(background-middle);
+    bg: var(background-middle);
+    highlightbackground: var(background-middle);
+    troughcolor: var(background-back);
+}
+
+.Text {
+    bg: var(background-back);
+    fg: var(foreground);
+    insertbackground: var(foreground);
+    selectbackground: var(background-front);
+    selectforeground: var(foreground);
+}
+
+.Toplevel {
+    bg: var(background-middle);
+}
